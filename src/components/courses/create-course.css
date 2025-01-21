@@ -1,0 +1,53 @@
+/* Tùy chỉnh CSS cho CreateCourse */
+
+.container {
+    @apply flex flex-col items-center;
+    @apply bg-gray-100 min-h-screen py-10;
+}
+
+.title {
+    @apply text-3xl font-bold text-gray-800;
+    @apply mb-6;
+}
+
+.form {
+    @apply w-full max-w-md;
+    @apply bg-white shadow-md rounded;
+    @apply px-8 pt-6 pb-8 mb-4;
+}
+
+.label {
+    @apply block text-gray-700 text-sm font-bold;
+    @apply mb-2;
+}
+
+.input {
+    /* Giao diện cơ bản */
+    @apply shadow appearance-none border rounded;
+    /* Định cỡ và khoảng cách */
+    @apply w-full py-2 px-3;
+    /* Màu sắc và chữ */
+    @apply text-gray-700 leading-tight;
+    /* Hiệu ứng focus */
+    @apply focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50;
+}
+
+.textarea {
+    /* Giao diện cơ bản */
+    @apply shadow appearance-none border rounded;
+    /* Định cỡ và khoảng cách */
+    @apply w-full py-2 px-3;
+    /* Màu sắc và chữ */
+    @apply text-gray-700 leading-tight;
+    /* Hiệu ứng focus */
+    @apply focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50;
+}
+
+.button {
+    /* Màu nền và chữ */
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold;
+    /* Định cỡ và khoảng cách */
+    @apply py-2 px-4;
+    /* Hiệu ứng focus */
+    @apply rounded focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50;
+}

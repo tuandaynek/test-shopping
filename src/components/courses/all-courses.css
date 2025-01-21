@@ -1,0 +1,74 @@
+a{
+    text-decoration: none;
+  }
+    .course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.course-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+.course-button {
+  display: inline-block;
+  background-color: #007BFF; /* Màu xanh dương */
+  color: #fff; /* Chữ màu trắng */
+  font-size: 1rem; /* Kích thước chữ */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px; /* Đệm trong nút */
+  border: none;
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.course-button:hover {
+  background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+.course-button:active {
+  background-color: #004494; /* Màu đậm hơn khi click */
+  transform: scale(0.95); /* Hiệu ứng thu nhỏ khi click */
+}
+
+.course-button:disabled {
+  background-color: #ccc; /* Màu xám khi bị vô hiệu hóa */
+  cursor: not-allowed;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
